@@ -1,0 +1,10 @@
+ * Variables
+ * Strings
+ * Funciones (argumentos, `return`)
+ * Declaraciones `if`
+ * Valores booleanos (`true`, `false`)
+ las variables son aquellos lugares donde se puede guardar una informacion o dato, ya sea numero, nombre o formula
+ los strings son caracteristicas de las oraciones que escribimos ya sean frases simples como 'hola' o complejas como 'quieres ser tu propio jefe marca al 1800-522-152 ext-telainventas'
+ las funciones son aquellas herramientas que usamos para hacer nuestro codigo mas facil ya que nos sirve para reusar codigo
+ las declaraciones if else son para ejecutar una accion, si (if) esta suma es verdadera haga esto sino(else o else if) haga otra cosa y finalize el programa
+ valores booleanos determinan si una condicion es verdadera o falsa 
