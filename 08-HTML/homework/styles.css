@@ -1,0 +1,17 @@
+#divClass > h1 {
+                color:blueviolet;
+                } 
+#thirdDiv>ul>li>img {
+                    width: 400px;
+                }
+#thirdDiv {
+    height: 600px ; 
+    width: 500px; 
+    background-color: cyan; 
+    padding: 50px; border-color: crimson; 
+    border-width: 6px;
+        }
+#spanId {
+    font-size: 18px; 
+    margin: 50px;
+    }   
