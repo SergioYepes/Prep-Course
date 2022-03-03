@@ -1,15 +1,29 @@
-#divClass > h1 {
-                color:blueviolet;
+body{
+    height: 665px;
+    background-image: url(https://cdn.dribbble.com/users/1247750/screenshots/13898492/challenger.png);
+    background-size: 10rem;
+    }
+h1{
+    color:brown;
+}
+.divClass      {
+                    color: gold ;
+                    text-align: center;
                 } 
+.centro{
+    margin: 10px auto 10px;
+    display: block;
+}
 #thirdDiv>ul>li>img {
-                    width: 400px;
+                    width: 400px;                   
                 }
 #thirdDiv {
     height: 600px ; 
     width: 500px; 
     background-color: cyan; 
-    padding: 50px; border-color: crimson; 
-    border-width: 6px;
+    padding: 50px;
+    border: solid 6px crimson;
+    
         }
 #spanId {
     font-size: 18px; 
