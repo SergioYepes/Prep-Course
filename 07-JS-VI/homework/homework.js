@@ -26,8 +26,10 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  cb(numeros.reduce((acumulador, elemento)=>  
-    acumulador+ elemento))
+  var suma= numeros.reduce (function(acumulador, elemento){ 
+    return acumulador+elemento
+  })
+  cb(suma)
  }
 
 
