@@ -18,11 +18,6 @@ function deObjetoAmatriz(objeto){
   //return nuevoObjeto
   var nuevoObjeto= Object.entries(objeto) //devuelve el nombre del objeto y el resultado en forma de matriz
   return nuevoObjeto
-//rvar array = Object.keys(objeto)
-    //r.map(function(key) {
-      //rreturn [key,objeto[key]]
-      //r });
-//return(array);
 }
 
 
@@ -40,8 +35,6 @@ for(var i=0; i<string.length;i++){
 }
 return obj
 }
-
-
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
@@ -50,7 +43,7 @@ function capToFront(s) {
   var mayus= ""
   var minus= ""
   for(i=0;i<s.length;i++){
-    if(s[i]==s[i].toUpperCase()){
+    if(s[i]==s[i].toUpperCase()){  //.toUpperCase retorna todo el array en mayuscula
       mayus+= s[i]
     }
     else{
@@ -69,8 +62,11 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
-  var cambios = str.split(" ").map(function (ele) {
-    return ele.split("").reverse().join("")
+  //[The, Henry]
+  //[T,h,e,H,e,n,r,y]
+  //.map recorre los elementos dentro del array
+  var cambios = str.split(" ").map(function (ele) { //.split dentro, define el parametro que divide y lo de vuelve como array
+    return ele.split("").reverse().join("")//.join es para que un array se pase a string
   })
   return cambios.join(" ")
 } 
@@ -81,6 +77,7 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  //
   var cadena = numero.toString()
   var cadenaInver=""
   cadenaInver=cadena.split("").reverse().join("")
@@ -110,18 +107,18 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
-  return arr.sort((a,b)=>a.length-b.length)
-  //var orden=""
-  //for (i=0;i<arr.length;i++){
-  //  orden=arr[i]
-  //  var j= i-1
-  //  while(j>=0 && orden.length<arr[j].length){
-  //    arr[j+1]=arr[j]
-  //    j--
-  //  }
-  //  arr[j+1]=orden
-  //}
-  //return arr
+  return arr.sort((a,b)=>a.length-b.length)//.sort organiza dependiendo la condicion
+  // var orden = ""
+  // for (i = 0; i < arr.length; i++) {
+  //   orden = arr[i]
+  //   var j = i - 1
+  //   while (j >= 0 && orden.length < arr[j].length) {
+  //     arr[j + 1] = arr[j]
+  //     j--
+  //   }
+  //   arr[j + 1] = orden
+  // }
+  // return arr
 }
 
 
